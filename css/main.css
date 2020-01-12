@@ -487,6 +487,7 @@ li.nav__list-item:first-child {
     border: 0.2rem solid var(--main-color);
     background-position: center;
     background-repeat: no-repeat;
+    outline: none;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -534,10 +535,6 @@ li.nav__list-item:first-child {
 
 
 @media (max-width: 900px) {
-
-
-
-
     .slider-button-prev {
         left: -6rem;
     }
@@ -548,8 +545,6 @@ li.nav__list-item:first-child {
 }
 
 @media (max-width: 640px) {
-
-
     .swiper-slide img {
         width: 17rem;
     }
@@ -563,8 +558,6 @@ li.nav__list-item:first-child {
         display: block;
     }
 
-
-
     .slider-button-prev,
     .slider-button-next {
         display: none;
@@ -576,7 +569,46 @@ li.nav__list-item:first-child {
 }
 
 
-
-
-
 /* -----------------Our Pets Section END------------------- */
+
+
+/* -----------------Help Section------------------- */
+
+.help-section {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.help-section__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.help-section__content_triggers {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.help-section__content_triggers .trigger {
+    width: 20rem;
+    margin-top: 8rem;
+}
+
+.trigger__img {
+    height: 6rem;
+}
+
+.trigger__name {
+    margin-top: 2.5rem;
+    font-family: var(--georgia);
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    color: #545454;
+}
+
+/* -----------------Help Section END------------------- */
