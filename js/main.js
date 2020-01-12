@@ -15,3 +15,37 @@
      }
 
  }
+
+
+ var swiper = new Swiper('.swiper-container', {
+     slidesPerView: 3,
+     spaceBetween: 50,
+     slidesPerGroup: 1,
+     loop: true,
+
+     navigation: {
+         nextEl: '.slider-button-next',
+         prevEl: '.slider-button-prev',
+     },
+
+     breakpoints: {
+         // when window width is >= 320px
+         320: {
+             slidesPerView: 1
+         },
+         // when window width is >= 640px
+         640: {
+             slidesPerView: 2,
+             spaceBetween: 30
+         },
+         // when window width is >= 900px
+         900: {
+             slidesPerView: 3,
+             spaceBetween: 50
+         },
+     },
+     pagination: {
+         el: '.swiper-pagination',
+         type: 'bullets',
+     }
+ });

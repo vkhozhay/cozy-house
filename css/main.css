@@ -60,6 +60,31 @@ section {
     }
 }
 
+h2 {
+    font-family: var(--georgia);
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+    letter-spacing: 0.2rem;
+    color: #545454;
+}
+
+.button {
+    padding: 2rem 4.5rem;
+    border-radius: 5rem;
+    font-family: var(--georgia);
+    font-size: 1.7rem;
+    letter-spacing: 0.1rem;
+    color: #292929;
+    background-color: var(--main-color);
+    transition: 0.3s;
+    transition-property: box-shadow, transform;
+}
+
+.button:hover {
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.5);
+    transform: scale(1.03);
+}
+
 /* -------------Global classes END---------------- */
 
 
@@ -69,10 +94,10 @@ section {
 .main-section {
     width: 100%;
     height: 100vh;
-    max-height: 910px;
     min-height: 690px;
     padding-top: 60px;
-    background: url('../assets/img/main-bg-front.png') right 7rem no-repeat, url('../assets/img/main-bg-back.jpg') no-repeat;
+    box-sizing: border-box;
+    background: url('../assets/img/main-bg-front.png') right 7rem no-repeat, url('../assets/img/main-bg-back.jpg') center/cover no-repeat;
 }
 
 .main-section__header {
@@ -112,6 +137,10 @@ section {
     margin-left: 4rem;
 }
 
+li.nav__list-item:first-child {
+    margin-left: 0;
+}
+
 .nav__list-item a {
     position: relative;
     font-family: var(--arial);
@@ -119,19 +148,33 @@ section {
     font-weight: 500;
     color: #cdcdcd;
     transition: 0.3s;
-    transition-property: padding-bottom;
+    transition-property: color;
 }
 
+.nav__list-item a::after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    width: 100%;
+    height: 0.3rem;
+    background-color: var(--main-color);
+    opacity: 0;
+    transition: 0.5s;
+    transition-property: opacity;
+}
 
 .nav__list-item a:hover {
-    padding-bottom: 0.5rem;
     color: #fff;
-    border-bottom: 0.3rem solid var(--main-color);
 }
 
-.nav__list-item a:hover a::after {
-    display: block;
+.nav__list-item a:hover::after {
+    opacity: 1;
 }
+
+
+
+
 
 .navigation-mobile {
     display: none;
@@ -210,22 +253,6 @@ section {
     color: #cdcdcd;
 }
 
-.main-section__content_button {
-    padding: 2rem 4.5rem;
-    border-radius: 5rem;
-    font-family: var(--georgia);
-    font-size: 1.7rem;
-    letter-spacing: 0.1rem;
-    color: #292929;
-    background-color: var(--main-color);
-    transition: 0.3s;
-    transition-property: box-shadow, transform;
-}
-
-.main-section__content_button:hover {
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.5);
-    transform: scale(1.03);
-}
 
 @media (max-width: 1600px) {
     .main-section {
@@ -333,3 +360,223 @@ section {
 
 
 /* ----------------Main Section END------------------ */
+
+/* -----------------About Section-------------------- */
+
+.about-section {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+}
+
+.about-section__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-section__discription p {
+    max-width: 42rem;
+    font-family: var(--arial);
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    color: #4c4c4c;
+}
+
+.about-section__discription p:first-child {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+}
+
+@media (max-width:800px) {
+    .about-section__content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-section__content-img {
+        width: 20rem;
+        margin-top: 3rem;
+        order: 1;
+    }
+
+    .about-section__content_text {
+        order: 0;
+    }
+}
+
+/* -----------------About Section END-------------------- */
+
+/* -----------------Our Pets Section------------------- */
+
+.pets-section {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+    background-color: #f6f6f6;
+}
+
+.pets-section__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.pets-section__slider {
+    position: relative;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    padding: 7rem 0;
+}
+
+.swiper-wrapper {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 40rem;
+    box-sizing: border-box;
+    padding: 3rem;
+    border-radius: 1rem;
+    background-color: #fafafa;
+    transition: 0.3s;
+    transition-property: box-shadow;
+}
+
+.swiper-slide:hover {
+    box-shadow: 0px 2px 30.1px 4.9px rgba(13, 13, 13, 0.04);
+}
+
+.swiper-slide .slide-name {
+    font-family: var(--georgia);
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    color: #545454;
+}
+
+.swiper-slide .slide-button {
+    padding: 2rem 4.5rem;
+    border-radius: 5rem;
+    border: 0.2rem solid var(--main-color);
+    font-family: var(--georgia);
+    font-size: 1.7rem;
+    letter-spacing: 0.1rem;
+    color: #292929;
+}
+
+.swiper-slide .slide-button:hover {
+    background-color: var(--main-color);
+}
+
+.slider-button-next,
+.slider-button-prev {
+    position: absolute;
+    top: 50%;
+    margin-top: -0.5rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 0.2rem solid var(--main-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.slider-button-prev {
+    left: -13rem;
+    background-image: url(../assets/img/left-arrow.png);
+}
+
+.slider-button-next {
+    right: -13rem;
+    background-image: url(../assets/img/right-arrow.png);
+}
+
+.slider-button-next:hover,
+.slider-button-prev:hover {
+    background-color: var(--main-color);
+}
+
+.swiper-pagination {
+    display: none;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--main-color);
+}
+
+.pets-section__button:hover {
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1170px) {
+    .swiper-wrapper {
+        max-width: 80vw;
+    }
+
+    .slider-button-prev {
+        left: -8rem;
+    }
+
+    .slider-button-next {
+        right: -8rem;
+    }
+}
+
+
+@media (max-width: 900px) {
+
+
+
+
+    .slider-button-prev {
+        left: -6rem;
+    }
+
+    .slider-button-next {
+        right: -6rem;
+    }
+}
+
+@media (max-width: 640px) {
+
+
+    .swiper-slide img {
+        width: 17rem;
+    }
+
+    .swiper-slide .slide-button {
+        padding: 1.5rem 3rem;
+        font-size: 1.5rem;
+    }
+
+    .swiper-pagination {
+        display: block;
+    }
+
+
+
+    .slider-button-prev,
+    .slider-button-next {
+        display: none;
+    }
+
+    .pets-section__button {
+        margin-top: 4rem;
+    }
+}
+
+
+
+
+
+/* -----------------Our Pets Section END------------------- */

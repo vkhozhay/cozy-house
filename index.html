@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cozy House</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-
+    <!-- MAIN SECTION -->
     <div class="navigation-mobile" id="navigation-mobile">
         <ul class="navigation-mobile__list">
             <li class="nav__list-item"><a href="#">About the shelter</a></li>
@@ -44,16 +45,100 @@
 
 
             <div class="main-section__content">
-                <div class="main-section__content_title">Not only people <br> need a house</div>
+                <h1 class="main-section__content_title">Not only people <br> need a house</h1>
                 <div class="main-section__content_discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Cras gravida est in porttitor porttitor. Duis sodales elementum ipsum, vehicula condimentum erat
                     fringilla et.</div>
-                <a href="#" class="main-section__content_button">Make a friend</a>
+                <a href="#" class="button main-section__content_button">Make a friend</a>
             </div>
         </div>
     </section>
+    <!-- MAIN SECTION END -->
 
+    <!-- ABOUT SECTION -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-section__content">
+                <img src="assets/img/about-section-pets.png" class="about-section__content-img" alt="dog and cat"
+                    width="300">
+                <div class="about-section__content_text">
+                    <h2 class="about-section__title">About the shelter<br>“Cozy House”</h2>
+                    <div class="about-section__discription">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum.
+                            Proin
+                            accumsan lorem vel gravida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc.</p>
+                        <p>Donec consectetur, diam in porta tempus, urna ligula vestibulum nibh, ac ornare felis justo
+                            nec
+                            leo.
+                            Praesent mattis nibh quis
+                            ultrices pharetra. Morbi tempus at ante sit amet tristique.
+                            Maecenas dignissim justo orci, in laoreet urna dapibus nec. Praesent quis tortor faucibus,
+                            tristique
+                            ante vitae, dignissim
+                            lorem. Sed at ligula et sem mattis gravida ac vel erat. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT SECTION END -->
 
+    <!-- OUR PETS SECTION -->
+    <section class="pets-section">
+        <div class="container">
+            <div class="pets-section__content">
+                <h2 class="pets-section__title">Our friends who<br>are looking for a house</h2>
+                <div class="pets-section__slider">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="assets/img/slider/1.png" alt="pet" width="200">
+                                <div class="slide-name">Katrine</div>
+                                <a href="#" class="slide-button">Learn More</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/slider/2.png" alt="pet" width="200">
+                                <div class="slide-name">Jennifer</div>
+                                <a href="#" class="slide-button">Learn More</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/slider/3.png" alt="pet" width="200">
+                                <div class="slide-name">Woody</div>
+                                <a href="#" class="slide-button">Learn More</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/slider/1.png" alt="pet" width="200">
+                                <div class="slide-name">Katrine</div>
+                                <a href="#" class="slide-button">Learn More</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/slider/2.png" alt="pet" width="200">
+                                <div class="slide-name">Jennifer</div>
+                                <a href="#" class="slide-button">Learn More</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/slider/3.png" alt="pet" width="200">
+                                <div class="slide-name">Woody</div>
+                                <a href="#" class="slide-button">Learn More</a>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/slider/1.png" alt="pet" width="200">
+                                <div class="slide-name">Katrine</div>
+                                <a href="#" class="slide-button">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="slider-button-next"></div>
+                    <div class="slider-button-prev"></div>
+                </div>
+                <a href="#" class="button pets-section__button">Get to know the rest</a>
+            </div>
+        </div>
+    </section>
+    <!-- OUR PETS SECTION END -->
+
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
