@@ -612,3 +612,180 @@ li.nav__list-item:first-child {
 }
 
 /* -----------------Help Section END------------------- */
+
+/* -----------------Addition Help Section------------------- */
+
+.addition-help-section {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    background-color: #F6F6F6;
+}
+
+.addition-help-section__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addition-help-section__img {
+
+    min-width: 200px;
+    margin-right: 3rem;
+}
+
+.addition-help-section__text-content {
+    max-width: 500px;
+    min-width: 300px;
+    margin-left: 3rem;
+}
+
+.addition-help-section__text-content .subtitle {
+    margin-top: 3.5rem;
+    font-family: var(--georgia);
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+    color: #545454;
+}
+
+.addition-help-section__text-content .card-number {
+    position: relative;
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 1.5rem 1.5rem 1.5rem 6rem;
+    font-family: var(--tnr);
+    font-size: 2rem;
+    border-radius: 1rem;
+    background-color: var(--main-color);
+}
+
+.addition-help-section__text-content .card-number::before {
+    content: ' ';
+    position: absolute;
+    left: 1.5rem;
+    top: 50%;
+    margin-top: -1.5rem;
+    width: 3rem;
+    height: 3rem;
+    background-image: url(../assets/img/credit-card.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.addition-help-section__text-content .discription {
+    margin-top: 3.5rem;
+    font-family: var(--arial);
+    font-style: italic;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: #B2B2B2;
+}
+
+@media (max-width: 750px) {
+    .addition-help-section__content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .addition-help-section__img {
+        order: 1;
+        max-width: 300px;
+        margin-top: 3rem;
+        margin-right: 0;
+    }
+
+    .addition-help-section__text-content {
+        margin-left: 0;
+    }
+}
+
+/* -----------------Addition Help Section END------------------- */
+
+/* -----------------Contact Section------------------- */
+
+.contact-section {
+    padding-top: 8rem;
+    background: linear-gradient(130deg, rgb(59, 47, 34) 0%, rgb(27, 26, 29) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact-section__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-section__content .contacts h2 {
+    margin-bottom: 4rem;
+    color: #fff;
+}
+
+.contact-section__content .contacts .contact-information,
+.contact-section__content .contacts .contact-information a {
+    display: flex;
+    align-items: center;
+    font-family: var(--tnr);
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.contact-section__content .contacts div.contact-information:last-child {
+    margin-top: 3rem;
+}
+
+.contact-section__content .contacts .contact-information img {
+    margin-right: 2rem;
+}
+
+.contact-section__img {
+    align-self: flex-end;
+}
+
+@media(max-width:960px) {
+    .contact-section__content {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contact-section__content .contacts .contact-information {
+        justify-content: center;
+    }
+
+    .contact-section__content .contacts {
+        flex-basis: 50%;
+    }
+
+    .contact-section__img {
+        margin-top: 3rem;
+        max-width: 250px;
+    }
+}
+
+@media(max-width:640px) {
+    .contact-section__content .contacts {
+        flex-basis: 100%;
+    }
+
+    .contact-section__content .contacts-location {
+        margin-top: 6rem;
+    }
+}
+
+
+
+
+/* -----------------Contact Section END------------------- */
+
+.Прямоугольник_2 {
+    background-image: -moz-linear-gradient(-40deg, rgb(59, 47, 34) 0%, rgb(27, 26, 29) 100%);
+    background-image: -webkit-linear-gradient(-40deg, rgb(59, 47, 34) 0%, rgb(27, 26, 29) 100%);
+    background-image: -ms-linear-gradient(-40deg, rgb(59, 47, 34) 0%, rgb(27, 26, 29) 100%);
+    position: absolute;
+    left: 75px;
+    top: 3170px;
+    width: 284px;
+    height: 128px;
+    z-index: 187;
+}

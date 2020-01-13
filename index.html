@@ -14,10 +14,16 @@
     <!-- MAIN SECTION -->
     <div class="navigation-mobile" id="navigation-mobile">
         <ul class="navigation-mobile__list">
-            <li class="nav__list-item"><a href="#">About the shelter</a></li>
-            <li class="nav__list-item"><a href="#">Our pets</a></li>
-            <li class="nav__list-item"><a href="#">To help the shelter</a></li>
-            <li class="nav__list-item"><a href="#">Contacts</a></li>
+            <li class="nav__list-item"><a href="#about-section" class="navigation-mobile__item flowing-scroll">About the
+                    shelter</a>
+            </li>
+            <li class="nav__list-item"><a href="#pets-section" class="navigation-mobile__item flowing-scroll">Our
+                    pets</a></li>
+            <li class="nav__list-item"><a href="#help-section" class="navigation-mobile__item flowing-scroll">To help
+                    the shelter</a>
+            </li>
+            <li class="nav__list-item"><a href="#contact-section"
+                    class="navigation-mobile__item flowing-scroll">Contacts</a></li>
         </ul>
     </div>
 
@@ -30,10 +36,12 @@
                 </a>
                 <nav class="header__navigation">
                     <ul class="nav__list">
-                        <li class="nav__list-item"><a href="#">About the shelter</a></li>
-                        <li class="nav__list-item"><a href="#">Our pets</a></li>
-                        <li class="nav__list-item"><a href="#">To help the shelter</a></li>
-                        <li class="nav__list-item"><a href="#">Contacts</a></li>
+                        <li class="nav__list-item"><a href="#about-section" class="flowing-scroll">About the shelter</a>
+                        </li>
+                        <li class="nav__list-item"><a href="#pets-section" class="flowing-scroll">Our pets</a></li>
+                        <li class="nav__list-item"><a href="#help-section" class="flowing-scroll">To help the
+                                shelter</a></li>
+                        <li class="nav__list-item"><a href="#contact-section" class="flowing-scroll">Contacts</a></li>
                     </ul>
                 </nav>
                 <div class="icon-wrapper" id="navigation-mobile__icon-wrapper">
@@ -56,7 +64,7 @@
     <!-- MAIN SECTION END -->
 
     <!-- ABOUT SECTION -->
-    <section class="about-section">
+    <section class="about-section" id="about-section">
         <div class="container">
             <div class="about-section__content">
                 <img src="assets/img/about-section-pets.png" class="about-section__content-img" alt="dog and cat"
@@ -84,7 +92,7 @@
     <!-- ABOUT SECTION END -->
 
     <!-- OUR PETS SECTION -->
-    <section class="pets-section">
+    <section class="pets-section" id="pets-section">
         <div class="container">
             <div class="pets-section__content">
                 <h2 class="pets-section__title">Our friends who<br>are looking for a house</h2>
@@ -139,7 +147,7 @@
     <!-- OUR PETS SECTION END -->
 
     <!-- HELP SECTION -->
-    <section class="help-section">
+    <section class="help-section" id="help-section">
         <div class="container">
             <div class="help-section__content">
                 <h2>Than you can help<br>our shelter</h2>
@@ -186,6 +194,53 @@
     </section>
     <!-- HELP SECTION END -->
 
+    <!-- ADDITION HELP SECTION -->
+    <section class="addition-help-section">
+        <div class="container">
+            <div class="addition-help-section__content">
+                <img src="assets/img/addition-help-section-dog.png" alt="dog" width="500"
+                    class="addition-help-section__img">
+                <div class="addition-help-section__text-content">
+                    <h2>In addition, you<br>can make a donation</h2>
+                    <div class="subtitle">Name of the bank / Type of bank account</div>
+                    <div class="card-number">8380 2880 8028 8791 7435</div>
+                    <p class="discription">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Maecenas a ipsum at libero sagittis dignissim sed
+                        ac diam. Praesent ultrices maximus tortor et vulputate. Interdum
+                        et malesuada fames ac ante ipsum primis in faucibus. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ADDITIONHELP SECTION END -->
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact-section">
+        <div class="container">
+            <div class="contact-section__content">
+                <div class="contacts ">
+                    <h2>For questions<br>and suggestions</h2>
+                    <div class="contact-information"><a href="mailto:email@shelter.com"><img
+                                src="assets/img/contact-mail.png" alt="mail icon" class="contact-icon">
+                            email@shelter.com</a></div>
+                    <div class="contact-information"><a href="tel: +13674577554"><img src="assets/img/contact-phone.png"
+                                alt="phone icon" class="contact-icon"> +13 674 567 75 54</a></div>
+                </div>
+                <div class="contacts contacts-location">
+                    <h2>We are waiting<br>for your visit</h2>
+                    <div class="contact-information"><img src="assets/img/contact-location.png" alt="location icon"
+                            class="contact-icon">Boston, Central Street, 1st<br>(Entrance from the store)</div>
+                    <div class="contact-information"><img src="assets/img/contact-location.png" alt="location icon"
+                            class="contact-icon">London, South Park, 18st</div>
+                </div>
+                <img src="assets/img/contact-section-dog.png" alt="dog" width="320" class="contact-section__img">
+            </div>
+        </div>
+    </section>
+    <!-- CONTACT SECTION END -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="js/main.js"></script>
 </body>
